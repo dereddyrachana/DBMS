@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family:sans-serif;
+  background: lightblue;
+  margin:0;
+  padding:0; 
+}
+form{
+	align-content: center;
+}
+header{
+  color:lightblue;
+  text-align: center;
+  font-size: 30px;
+  background:white;
+  margin:0px;
+  padding:0px;
+  overflow:hidden;
+
+}
+label{
+  color:white;
+  font-size: 20px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px ;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 15px;
+
+}
+.button {
+    background-color:white;
+    color: lightblue;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-size: 15px;
+    border: gray solid 2px;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 10px;
+    font-weight: bold; 
+
+}
+.button:hover {
+    opacity: 0.8;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    width:300px;
+    position: relative;
+    left: 40%;
+}
+img.logo {
+    width: 125px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.container {
+    padding: 16px;
+    width: 500px;
+    position: relative;
+    left:40%;
+    color: white;
+    top:150px;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 20px;
+    padding: 40px;
+
+}
+</style>
+</head>
+<body>
+
+  <header>
+     <h2>VIT HOSTEL ALLOTMENT LOGIN</h2>
+     <img src="logo.png" class="logo">
+  </header>
+ 
+
+  
+<form name="login" method =  "post"  action="redirectcon.php">
+  
+  <div class="container">
+    <label for="username"><b>Registration No.</b></label>
+    <input type="text" placeholder="Username" name="userid" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Password" name="psw" required>
+        
+    <input class="button"  type="SUBMIT" name="SUBMIT" value="SUBMIT">
+ 
+  </div>
+</form>
+
+</body>
+</html>

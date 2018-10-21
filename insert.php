@@ -15,7 +15,7 @@ $roomType=$_POST['roomType'];
 $beds=$_POST['beds'];
 
 // Insert data into mysql 
-$sql="INSERT INTO tbl_name(block, roomType, beds)VALUES('$block', '$roomType', '$beds')";
+$sql="INSERT INTO tbl_name(block, roomType, beds,reg_no,name)VALUES('$block', '$roomType', '$beds','A','B')";
 
 
 if(!mysqli_query($con,$sql))
